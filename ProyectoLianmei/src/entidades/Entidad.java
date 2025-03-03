@@ -15,8 +15,10 @@ public class Entidad {
 	public int xMundo, yMundo;
 	public int velocidad;
 
-	public BufferedImage abajo1, abajo2, abajo3, abajo4, arriba1, arriba2, arriba3, arriba4, izquierda1, izquierda2, derecha1, derecha2;
+	public BufferedImage standL1, standL2, standL3, standL4, standR1, standR2, standR3, standR4;
+	public BufferedImage walkL1, walkL2, walkL3, walkL4, walkR1, walkR2, walkR3, walkR4;
 	public String direccion;
+	public String orientacion;
 
 	public int contadorDeSprites = 0;
 	public int numeroDeSprite = 2;
@@ -46,12 +48,6 @@ public class Entidad {
 		dialogoIndice++;
 
 		switch(pdj.jugador.direccion) {
-		case "arriba":
-			direccion = "abajo";
-			break;
-		case "abajo":
-			direccion = "arriba";
-			break;
 		case "izquierda":
 			direccion = "derecha";
 			break;
@@ -109,61 +105,33 @@ public class Entidad {
 
 	        BufferedImage imagen = null;
 
-	        switch (direccion) {
-	            case "arriba":
-	                if (numeroDeSprite == 1) {
-	                    imagen = arriba1;
-	                }
-	                if (numeroDeSprite == 2) {
-	                    imagen = arriba2;
-	                }
-	                if (numeroDeSprite == 3) {
-	                    imagen = arriba3;
-	                }
-	                if (numeroDeSprite == 4) {
-	                    imagen = arriba4;
-	                }
-	                break;
-	            case "abajo":
-	                if (numeroDeSprite == 1) {
-	                    imagen = abajo1;
-	                }
-	                if (numeroDeSprite == 2) {
-	                    imagen = abajo2;
-	                }
-	                if (numeroDeSprite == 3) {
-	                    imagen = abajo3;
-	                }
-	                if (numeroDeSprite == 4) {
-	                    imagen = abajo4;
-	                }
-	                break;
+	        switch (direccion) { 
 	            case "izquierda":
 	                if (numeroDeSprite == 1) {
-	                    imagen = izquierda1;
+	                    imagen = standL1;
 	                }
 	                if (numeroDeSprite == 2) {
-	                    imagen = izquierda2;
+	                    imagen = standL2;
 	                }
 	                if (numeroDeSprite == 3) {
-	                    imagen = izquierda1;
+	                    imagen = standL3;
 	                }
 	                if (numeroDeSprite == 4) {
-	                    imagen = izquierda2;
+	                    imagen = standL4;
 	                }
 	                break;
 	            case "derecha":
 	                if (numeroDeSprite == 1) {
-	                    imagen = derecha1;
+	                    imagen = walkR1;
 	                }
 	                if (numeroDeSprite == 2) {
-	                    imagen = derecha2;
+	                    imagen = walkR2;
 	                }
 	                if (numeroDeSprite == 3) {
-	                    imagen = derecha1;
+	                    imagen = walkR3;
 	                }
 	                if (numeroDeSprite == 4) {
-	                    imagen = derecha2;
+	                    imagen = walkR4;
 	                }
 	                break;
 	        }
@@ -180,7 +148,7 @@ public class Entidad {
 
 	    try {
 	        imagen = ImageIO.read(getClass().getResourceAsStream(rutaImagen + ".png"));
-	        imagen = uTool.escalarImagen(imagen, pdj.tamañoDeBaldosa, pdj.tamañoDeBaldosa + (pdj.tamañoDeBaldosa / 2));
+	        imagen = uTool.escalarImagen(imagen, pdj.tamañoDeBaldosa * 2, pdj.tamañoDeBaldosa * 2);
 	    } catch (IOException e) {
 	        e.printStackTrace();
 	    }

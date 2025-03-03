@@ -22,9 +22,9 @@ public class InicializadorDeRecursos {
 	
 	public void establecerNPCs() {
 
-		pdj.npc[0] = new NPC_Niña(pdj);
-		pdj.npc[0].xMundo = pdj.tamañoDeBaldosa*10;
-		pdj.npc[0].yMundo = pdj.tamañoDeBaldosa*8;
+		//pdj.npc[0] = new NPC_Niña(pdj);
+		//pdj.npc[0].xMundo = pdj.tamañoDeBaldosa*10;
+		//pdj.npc[0].yMundo = pdj.tamañoDeBaldosa*8;
 
 	}
 	

@@ -23,18 +23,22 @@ public class NPC_Niña extends Entidad {
 
 	public void obtenerImagen() {
 
-		abajo1 = configurarImagen("/npc/gg_down_1");
-		abajo2 = configurarImagen("/npc/gg_down_2");
-		abajo3 = configurarImagen("/npc/gg_down_3");
-		abajo4 = configurarImagen("/npc/gg_down_4");
-		izquierda1 = configurarImagen("/npc/gg_left_1");
-		izquierda2 = configurarImagen("/npc/gg_left_2");
-		derecha1 = configurarImagen("/npc/gg_right_1");
-		derecha2 = configurarImagen("/npc/gg_right_2");
-		arriba1 = configurarImagen("/npc/gg_up_1");
-		arriba2 = configurarImagen("/npc/gg_up_2");
-		arriba3 = configurarImagen("/npc/gg_up_3");
-		arriba4 = configurarImagen("/npc/gg_up_4");
+		standR1 = configurarImagen("/lianmei/lianmei-stand-R_1");
+		standR2 = configurarImagen("/lianmei/lianmei-stand-R_2");
+		standR3 = configurarImagen("/lianmei/lianmei-stand-R_3");
+		standR4 = configurarImagen("/lianmei/lianmei-stand-R_4");
+		standL1 = configurarImagen("/lianmei/lianmei-stand-L_1");
+		standL2 = configurarImagen("/lianmei/lianmei-stand-L_2");
+		standL3 = configurarImagen("/lianmei/lianmei-stand-L_3");
+		standL4 = configurarImagen("/lianmei/lianmei-stand-L_4");
+		walkR1 = configurarImagen("/lianmei/lianmei-walk-R_1");
+		walkR2 = configurarImagen("/lianmei/lianmei-walk-R_2");
+		walkR3 = configurarImagen("/lianmei/lianmei-walk-R_3");
+		walkR4 = configurarImagen("/lianmei/lianmei-walk-R_4");
+		walkL1 = configurarImagen("/lianmei/lianmei-walk-L_1");
+		walkL2 = configurarImagen("/lianmei/lianmei-walk-L_2");
+		walkL3 = configurarImagen("/lianmei/lianmei-walk-L_3");
+		walkL4 = configurarImagen("/lianmei/lianmei-walk-L_4");
 
 	}
 	

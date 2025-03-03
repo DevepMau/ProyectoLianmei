@@ -73,7 +73,6 @@ public class PanelDeJuego extends JPanel implements Runnable {
 		
 		inicializadorDeRecursos.establecerObjetos();
 		inicializadorDeRecursos.establecerNPCs();
-		inicializadorDeRecursos.establecerPersonajes();
 
 		estadoDeJuego = modoJuego;
 	}
@@ -170,7 +169,6 @@ public class PanelDeJuego extends JPanel implements Runnable {
 		}
 		//OTROS
 		else {
-			
 			//BALDOSAS
 			gestorDeBaldosas.dibujar(g2);
 			
@@ -180,6 +178,8 @@ public class PanelDeJuego extends JPanel implements Runnable {
 					obj[i].dibujar(g2, this);
 				}
 			}
+			
+			jugador.dibujar(g2);
 
 			//JUGADOR Y NPC
 			for(int i = 0; i < npc.length; i++) {
