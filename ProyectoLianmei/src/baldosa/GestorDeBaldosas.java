@@ -28,9 +28,11 @@ public class GestorDeBaldosas {
 
 	public void obtenerImagenDeBaldosa() {
 		
-		configurar(0, "grass", false);
-		configurar(1, "water", true);
-		configurar(2, "brick", true);
+		configurar(0, "grass00", false);
+		configurar(1, "grass01", false);
+		configurar(2, "shore01", true);
+		configurar(3, "water01", true);
+		configurar(4, "earth01", true);
 		
 	}
 	

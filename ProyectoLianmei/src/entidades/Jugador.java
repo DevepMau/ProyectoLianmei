@@ -18,7 +18,7 @@ public class Jugador extends Entidad {
 		super(pdj);
 		this.teclado = teclado;
 		
-		areaSolida = new Rectangle(16, 32, 64, 72);
+		areaSolida = new Rectangle(16, 24, 64, 64);
 		areaSolidaDefaultX = areaSolida.x;
 		areaSolidaDefaultY = areaSolida.y;
 		
